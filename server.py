@@ -1,6 +1,7 @@
 from flask import Flask, render_template, session, redirect, url_for, request
 import random
 import string
+import os
 
 app = Flask(__name__)
 app.secret_key = 'dfghsd87fgasda97988678kdfg7'  # Replace with a strong, random string
@@ -72,4 +73,4 @@ def quit_game():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
