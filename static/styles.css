@@ -1,10 +1,11 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'UnifrakturCook', cursive;
     background-image: url('/static/background.jpg'); /* Replace with your image */
-    background-size:auto;/*nsures the image covers the entire screen */
+    background-size:cover;/*nsures the image covers the entire screen */
     background-position: center; /* Keeps the focus on the center of the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Fixes the background while scrolling */
@@ -20,19 +21,21 @@ body {
 
 /* Centered container for content */
 .container {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    /*background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 15px;
     width: 90%;
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for better visibility */
+    backdrop-filter: blur(10px); /* Background blur for modern look */
 }
 
 /* Button Styles */
 button {
-    background-color: #4CAF50; /* Green */
+    font-family: 'UnifrakturCook', cursive;
+    background-color: #ffffff; /* Green */
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 20px;
     text-align: center;
     text-decoration: none;
@@ -42,15 +45,16 @@ button {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-}
+    size: 16px;
+    position: relative;}
 
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #b30009; /* Darker green on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
 
 button:active {
-    background-color: #3e8e41; /* Even darker on click */
+    background-color: #f00000; /* Even darker on click */
     transform: scale(0.95); /* Slight shrink effect */
 }
 

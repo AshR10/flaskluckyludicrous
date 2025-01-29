@@ -1,6 +1,5 @@
 from flask import Flask, render_template, session, redirect, url_for, request
 import random
-import string
 import os
 
 app = Flask(__name__)
